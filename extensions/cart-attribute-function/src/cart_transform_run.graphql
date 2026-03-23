@@ -1,0 +1,20 @@
+query CartTransformRunInput {
+  cart {
+    lines {
+      id
+      quantity
+      attribute(key: "_final_sale") {
+        key
+        value
+      }
+      merchandise {
+        ... on ProductVariant {
+          id
+          product {
+            hasAnyTag(tags: ["final sale"])
+          }
+        }
+      }
+    }
+  }
+}
