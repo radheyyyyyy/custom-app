@@ -2,7 +2,7 @@
 
 client_id = "3a18f6323b5f904db5e20e1004f26f24"
 name = "bundle-product"
-application_url = "https://emersed-yuriko-undecocted.ngrok-free.dev"
+application_url = "https://custom-app-0khl.onrender.com"
 embedded = true
 
 [build]
@@ -24,7 +24,7 @@ api_version = "2026-04"
 scopes = "read_products, write_products, read_cart_transforms, write_cart_transforms"
 
 [auth]
-redirect_urls = [ "https://emersed-yuriko-undecocted.ngrok-free.dev/api/auth" ]
+redirect_urls = ["https://custom-app-0khl.onrender.com/api/auth" ]
 
 [product.metafields.app.demo_info]
 type = "single_line_text_field"
